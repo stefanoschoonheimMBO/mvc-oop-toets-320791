@@ -5,7 +5,7 @@ class poundForPound extends BaseController
     private $poundForPound;
     public function __construct()
     {
-        $this->poundForPound = $this->model('poundForPound');
+        $this->poundForPound = $this->model('PoundModel');
     }
 
     public function index()
@@ -16,11 +16,12 @@ class poundForPound extends BaseController
 
         foreach($result as $mensPound) {
             $rows .= "<tr>
-                        <td>$mensPound->Naam</td>
-                        <td>$mensPound->Club</td>
-                        <td>$mensPound->Leeftijd</td>
-                        <td>$mensPound->Nationaliteit</td>
-                        <td>$mensPound->Salaris</td>
+                        <td>$mensPound->Name</td>
+                        <td>$mensPound->Ranking</td>
+                        <td>$mensPound->Length</td>
+                        <td>$mensPound->Weight</td>
+                        <td>$mensPound->Age</td>
+                        <td>$mensPound->WinsByKnockout</td>
                       <tr>";
         }
 

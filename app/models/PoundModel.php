@@ -1,6 +1,6 @@
 <?php
 
-class PoundForPoundModel
+class PoundModel
 {
     private $db;
 
@@ -16,6 +16,7 @@ class PoundForPoundModel
                        ,Length
                        ,Weight
                        ,Age
+                       ,WinsByKnockout
                 FROM   PoundForPound";
 
         $this->db->query($sql);
