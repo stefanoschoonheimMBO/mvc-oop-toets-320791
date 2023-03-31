@@ -17,7 +17,8 @@ class PoundModel
                        ,Weight
                        ,Age
                        ,WinsByKnockout
-                FROM   PoundForPound";
+                FROM   PoundForPound
+                ORDER BY Ranking ASC";
 
         $this->db->query($sql);
 
